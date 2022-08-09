@@ -1,11 +1,11 @@
 package service;
 
-import domian.Account;
+import domian.Payment;
 
 public class PaymentServiceImpl implements PaymentService {
 
     @Override
-    public void doPayment(Account from, Account to) {
+    public void process(Payment payment) {
 
     }
 }

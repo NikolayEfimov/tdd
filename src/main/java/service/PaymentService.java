@@ -1,8 +1,8 @@
 package service;
 
-import domian.Account;
+import domian.Payment;
 
 public interface PaymentService {
 
-    void doPayment(Account from, Account to);
+    void process(Payment payment);
 }
