@@ -12,6 +12,8 @@ public class Payment {
 
     private String currency;
 
+    private PaymentType paymentType;
+
     public Payment(Account from, Account to, BigDecimal amount, String currency) {
         this.from = from;
         this.to = to;

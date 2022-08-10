@@ -12,13 +12,14 @@ class PaymentServiceImplTest {
 
     @Test
     void processIsNotSuccessfulBecauseSenderHasNotEnoughFunds() {
-        var account1 = new Account(1L);
-        var account2 = new Account(2L);
+        var account1 = new Account(1L, "Tinkoff");
+        var account2 = new Account(2L, "Alfa-bank");
+
         var payment = new Payment(
                 account1,
                 account2,
                 BigDecimal.valueOf(500),
-                "USD"
+                "RUB"
         );
 
         service.process(payment);
